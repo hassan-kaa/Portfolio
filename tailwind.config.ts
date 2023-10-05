@@ -24,7 +24,10 @@ const config: Config = {
         },
       },
       animation: {
-        custom: "custom 10s ease-in-out infinite",
+        custom: "custom 7s ease-in-out infinite",
+      },
+      boxShadow: {
+        custom: "0 0 10px rgba(0,0,0,.09)",
       },
     },
   },

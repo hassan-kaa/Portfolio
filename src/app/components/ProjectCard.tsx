@@ -4,7 +4,10 @@ import React from "react";
 
 function ProjectCard() {
   return (
-    <div className=" my-4 flex w-10/12 flex-col items-center justify-center gap-4 rounded-2xl bg-white p-3 shadow-md shadow-slate-500 lg:h-max lg:w-3/5 lg:flex-row lg:items-start lg:p-8 ">
+    <div
+      id="projects"
+      className="my-4 flex w-2/3 flex-col items-center justify-center gap-4 rounded-2xl bg-white p-3 shadow-md shadow-slate-500  lg:justify-between xl:flex-row  xl:p-8 "
+    >
       <div className=" aspect-3/2 overflow-hidden rounded-xl">
         <img src="/photo.png" className="object-cover" alt="project photo" />
       </div>
@@ -23,7 +26,7 @@ function ProjectCard() {
             React
           </div>
           <div className="max-w-12 bg-white p-2 shadow-sm shadow-slate-400">
-            Technology 2
+            Technology
           </div>
         </div>
         <div className="flex items-center justify-center gap-2">
@@ -32,7 +35,7 @@ function ProjectCard() {
             <FontAwesomeIcon height={16} width={16} icon={faSadCry} />
           </div>
           <div className="flex items-center gap-1">
-            Live demo{" "}
+            Live demo
             <FontAwesomeIcon height={16} width={16} icon={faNewspaper} />
           </div>
         </div>
