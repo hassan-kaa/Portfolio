@@ -3,13 +3,16 @@ import Hero from "./components/Hero";
 import ProjectCard from "./components/ProjectCard";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import About from "./components/About";
+import Projects from "./components/Projects";
 
 export default function Home() {
   return (
-    <div className="m-0 flex flex-col items-center justify-center gap-0 p-0">
+    <div className="m-0 flex flex-col items-center justify-center gap-8 p-0">
       <Navbar />
       <Hero />
-      <ProjectCard />
+      <About />
+      <Projects />
       <Footer />
     </div>
   );

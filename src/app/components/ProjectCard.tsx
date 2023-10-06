@@ -1,43 +1,60 @@
 import { faNewspaper, faSadCry } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import React from "react";
+type AppProps = {
+  position: string;
+};
 
-function ProjectCard() {
+function ProjectCard({ position }: AppProps) {
   return (
     <div
       id="projects"
-      className="my-4 flex w-2/3 flex-col items-center justify-center gap-4 rounded-2xl bg-white p-3 shadow-md shadow-slate-500  lg:justify-between xl:flex-row  xl:p-8 "
+      className={`my-4 flex w-full flex-col items-center justify-center gap-4 rounded-2xl bg-white p-3 shadow-md ring-2 ring-slate-300 ring-opacity-50 lg:w-3/4  ${
+        position == "right" ? "xl:flex-row-reverse" : "xl:flex-row"
+      }  xl:p-8 `}
     >
-      <div className=" aspect-3/2 overflow-hidden rounded-xl">
-        <img src="/photo.png" className="object-cover" alt="project photo" />
+      <div className=" aspect-3/2 relative w-full overflow-hidden rounded-xl xl:w-1/2  ">
+        <img
+          src="/kaaprompts.png"
+          className=" hover:duration-5000 absolute object-cover transition duration-1000 ease-in-out hover:translate-y-[-40%] hover:scale-110"
+          alt="project photo"
+        />
       </div>
-      <div className="flex h-full flex-col items-center justify-end gap-4 ">
+      <div className="flex flex-col items-center justify-between gap-4 xl:w-1/2">
         <h1 className=" text-center text-xl font-bold">
-          Project Name (Date 2023) 🚀
+          KaaPrompts (August 2023) 🚀
         </h1>
         <p className="max-w-sm text-center text-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
-          dolores placeat saepe, officiis veritatis voluptas, asperiores eaque
-          quo ullam consequuntur, pariatur id voluptatibus ab voluptatem ut
-          minus quasi illo repudiandae!
+          A fullstack Next.js 13 CRUD application of an open source AI prompting
+          tool for modern world that helps to discover , create and share
+          creative prompts .<br />
+          User can login or create a new account, can create , explore , save
+          and share prompts.
         </p>
         <div className="flex items-center justify-center gap-2">
           <div className="max-w-12 bg-white p-2 shadow-sm shadow-slate-400">
-            React
+            Nextjs
           </div>
           <div className="max-w-12 bg-white p-2 shadow-sm shadow-slate-400">
-            Technology
+            TailwindCSS
           </div>
         </div>
         <div className="flex items-center justify-center gap-2">
-          <div className="flex items-center gap-1">
+          <Link
+            href={"https://github.com/hassan-kaa/KaaaPrompts"}
+            className="flex items-center gap-1"
+          >
             Code
             <FontAwesomeIcon height={16} width={16} icon={faSadCry} />
-          </div>
-          <div className="flex items-center gap-1">
+          </Link>
+          <Link
+            href={"https://kaa-prompts.vercel.app/"}
+            className="flex items-center gap-1"
+          >
             Live demo
             <FontAwesomeIcon height={16} width={16} icon={faNewspaper} />
-          </div>
+          </Link>
         </div>
       </div>
     </div>

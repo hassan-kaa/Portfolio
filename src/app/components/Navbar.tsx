@@ -12,10 +12,18 @@ function Navbar() {
       <h1 className="text-2xl font-bold">Hassan Kaabechi</h1>
       <div className="hidden w-2/3 sm:flex sm:justify-between">
         <div className=" flex w-3/4 items-center justify-end gap-5 ">
-          <Link href={"#home"}>Home</Link>
-          <Link href={"#about"}>About</Link>
-          <Link href={"#projects"}>Projects</Link>
-          <Link href={"#contact"}>Contact</Link>
+          <Link className="font-medium hover:text-blue-500" href={"#home"}>
+            Home
+          </Link>
+          <Link className="font-medium hover:text-blue-500" href={"#about"}>
+            About
+          </Link>
+          <Link className="font-medium hover:text-blue-500" href={"#projects"}>
+            Projects
+          </Link>
+          <Link className="font-medium hover:text-blue-500" href={"#contact"}>
+            Contact
+          </Link>
         </div>
         <a
           href={"/Hassan_Kaabechi_Resume.pdf"}
@@ -41,10 +49,18 @@ function Navbar() {
       </div>
       {toggleNav && (
         <div className="absolute right-0 top-full mt-3 flex w-1/2 min-w-[210px] flex-col items-end justify-end gap-2 rounded-lg bg-white p-5">
-          <Link href={"#home"}>Home</Link>
-          <Link href={"#about"}>About</Link>
-          <Link href={"#projects"}>Projects</Link>
-          <Link href={"#contact"}>Contact</Link>
+          <Link className="font-medium hover:text-blue-500" href={"#home"}>
+            Home
+          </Link>
+          <Link className="font-medium hover:text-blue-500" href={"#about"}>
+            About
+          </Link>
+          <Link className="font-medium hover:text-blue-500" href={"#projects"}>
+            Projects
+          </Link>
+          <Link className="font-medium hover:text-blue-500" href={"#contact"}>
+            Contact
+          </Link>
           <a
             href={"/Hassan_Kaabechi_Resume.pdf"}
             download={true}

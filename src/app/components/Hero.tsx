@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="lg:px-custom flex w-full flex-col items-center justify-center gap-12 px-20  py-4 pt-20 lg:flex-row-reverse lg:items-start  lg:gap-12 lg:py-40"
+      className="lg:px-custom flex h-[100vh] w-full flex-col items-center justify-center gap-12 px-20  py-4 pt-20 lg:flex-row-reverse lg:items-center  lg:gap-12 "
     >
       <div className=" aspect-square max-h-80 max-w-sm animate-custom overflow-hidden border-4 border-solid border-black  lg:max-h-96 lg:max-w-md">
         <img
@@ -17,11 +17,18 @@ function Hero() {
         />
       </div>
       <div className="flex flex-col items-center justify-center gap-4 lg:items-start lg:justify-start">
-        <h1 className="text-center text-4xl font-extrabold leading-normal lg:max-w-2xl lg:text-start lg:text-5xl lg:leading-relaxed ">
+        <h1 className="text-center text-3xl font-extrabold leading-normal lg:max-w-2xl lg:text-start lg:text-5xl lg:leading-relaxed ">
           Software Engineering Student / Web Developer 👋🏻
         </h1>
         <p className="text-center text-xl font-light lg:max-w-lg lg:text-start">
-          Hi, I'm Hassan Kaabechi. A software engineering student @ my last year
+          Hi, I'm Hassan Kaabechi. A software engineering student | Top Rated
+          Web Developer{" "}
+          <span>
+            {" "}
+            <Link href="https://www.upwork.com" className=" text-green-700">
+              @Upwork
+            </Link>{" "}
+          </span>
           and passionate web developer based in Tunis, Tunisia. 📍
         </p>
         <div className="flex items-center justify-center gap-4 text-black">
@@ -54,16 +61,16 @@ function Hero() {
             </div>
             <h2 className="font-ligt text-lg">Other Skills </h2>
             <div className="col-span-3 flex items-center justify-center gap-4 lg:justify-start">
-              <Image src={"/node-js.png"} alt="node" width={48} height={48} />
-              <Image src={"/spring.png"} alt="spring" width={48} height={48} />
               <Image
                 src={"/angular.png"}
                 alt="angular"
                 width={48}
                 height={48}
               />
-              <Image src={"/nest.png"} alt="nest" width={48} height={48} />
 
+              <Image src={"/node-js.png"} alt="node" width={48} height={48} />
+              <Image src={"/nest.png"} alt="nest" width={48} height={48} />
+              <Image src={"/spring.png"} alt="spring" width={48} height={48} />
               <Image src={"/aws.png"} alt="aws" width={48} height={48} />
             </div>
           </div>

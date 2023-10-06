@@ -29,6 +29,9 @@ const config: Config = {
       boxShadow: {
         custom: "0 0 10px rgba(0,0,0,.09)",
       },
+      transitionDuration: {
+        "5000": "5000ms",
+      },
     },
   },
   plugins: [],
