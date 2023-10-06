@@ -46,32 +46,87 @@ function Hero() {
           <div className="flex w-full flex-col items-center justify-center gap-4 lg:grid lg:grid-cols-4 lg:grid-rows-2 ">
             <h2 className="font-ligt  text-lg ">Main Tech Stack </h2>
             <div className="col-span-3 flex items-center justify-center gap-4 lg:justify-start ">
-              <Image src={"/html-5.png"} alt="html" width={48} height={48} />
-              <Image src={"/css-3.png"} alt="css" width={48} height={48} />
-              <Image src={"/js.png"} alt="js" width={48} height={48} />
-              <Image src={"/typescript.png"} alt="ts" width={48} height={48} />
               <Image
-                className="rounded-md"
+                className="skill"
+                src={"/html-5.png"}
+                alt="html"
+                width={48}
+                height={48}
+              />
+              <Image
+                className="skill"
+                src={"/css-3.png"}
+                alt="css"
+                width={48}
+                height={48}
+              />
+              <Image
+                className="skill"
+                src={"/js.png"}
+                alt="js"
+                width={48}
+                height={48}
+              />
+              <Image
+                className="skill"
+                src={"/typescript.png"}
+                alt="ts"
+                width={48}
+                height={48}
+              />
+              <Image
+                className="translate-y-[-10%] rounded-md transition duration-300 ease-in-out hover:scale-[120%] hover:duration-300"
                 src={"/react.png"}
                 alt="react"
                 width={48}
                 height={48}
               />
-              <Image src={"/next.svg"} alt="next" width={48} height={48} />
+              <Image
+                className="skill"
+                src={"/next.svg"}
+                alt="next"
+                width={48}
+                height={48}
+              />
             </div>
             <h2 className="font-ligt text-lg">Other Skills </h2>
             <div className="col-span-3 flex items-center justify-center gap-4 lg:justify-start">
               <Image
+                className="skill"
                 src={"/angular.png"}
                 alt="angular"
                 width={48}
                 height={48}
               />
 
-              <Image src={"/node-js.png"} alt="node" width={48} height={48} />
-              <Image src={"/nest.png"} alt="nest" width={48} height={48} />
-              <Image src={"/spring.png"} alt="spring" width={48} height={48} />
-              <Image src={"/aws.png"} alt="aws" width={48} height={48} />
+              <Image
+                className="skill"
+                src={"/node-js.png"}
+                alt="node"
+                width={48}
+                height={48}
+              />
+              <Image
+                className="skill"
+                src={"/nest.png"}
+                alt="nest"
+                width={48}
+                height={48}
+              />
+              <Image
+                className="skill"
+                src={"/spring.png"}
+                alt="spring"
+                width={48}
+                height={48}
+              />
+              <Image
+                className="skill"
+                src={"/aws.png"}
+                alt="aws"
+                width={48}
+                height={48}
+              />
             </div>
           </div>
         </div>

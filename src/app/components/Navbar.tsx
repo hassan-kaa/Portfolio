@@ -10,8 +10,8 @@ function Navbar() {
   return (
     <nav className="shadow-custom fixed left-0 top-0 z-20 flex max-h-16 w-full items-center justify-between bg-white px-12 py-4 lg:px-24  ">
       <h1 className="text-2xl font-bold">Hassan Kaabechi</h1>
-      <div className="hidden w-2/3 sm:flex sm:justify-between">
-        <div className=" flex w-3/4 items-center justify-end gap-5 ">
+      <div className="hidden w-2/3 md:flex md:justify-between">
+        <div className=" flex w-3/4 items-center justify-center lg:justify-end gap-5 ">
           <Link className="font-medium hover:text-blue-500" href={"#home"}>
             Home
           </Link>
@@ -28,14 +28,14 @@ function Navbar() {
         <a
           href={"/Hassan_Kaabechi_Resume.pdf"}
           download={true}
-          className="flex cursor-pointer items-center justify-center text-blue-500 lg:gap-4"
+          className="flex cursor-pointer items-center justify-center gap-0 text-sm text-blue-500 lg:gap-4"
         >
           Download CV
           <FontAwesomeIcon icon={faDownload} height={24} width={24} />
         </a>
       </div>
       <div
-        className="flex cursor-pointer justify-end sm:hidden"
+        className="flex cursor-pointer justify-end md:hidden"
         onClick={() => {
           setToggleNav((prev) => !prev);
         }}
@@ -64,7 +64,7 @@ function Navbar() {
           <a
             href={"/Hassan_Kaabechi_Resume.pdf"}
             download={true}
-            className="flex cursor-pointer items-center justify-center text-blue-500 lg:gap-4"
+            className="flex cursor-pointer items-center   justify-center text-blue-500 lg:gap-4"
           >
             Download CV
             <FontAwesomeIcon icon={faDownload} height={24} width={24} />

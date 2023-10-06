@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.skill {
+  @apply translate-y-[-10%] transition duration-300 ease-in-out hover:scale-[130%] hover:duration-300;
+}
