@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import heroImage from "../../../public/photo.png"
 function Hero() {
   return (
     <div
@@ -11,9 +12,9 @@ function Hero() {
       className="lg:px-custom flex h-[100vh] w-full flex-col items-center justify-center gap-12 px-12  py-4 pt-20 lg:flex-row-reverse lg:items-center  lg:gap-12 "
     >
       <div className=" aspect-square max-h-80 max-w-sm animate-custom overflow-hidden border-4 border-solid border-black  lg:max-h-96 lg:max-w-md">
-        <img
+        <Image
           alt="photo"
-          src={"/photo.png"}
+          src={heroImage}
           className=" h-full w-full object-cover"
         />
       </div>

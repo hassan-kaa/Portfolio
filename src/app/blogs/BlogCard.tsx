@@ -2,6 +2,8 @@
 import LaunchIcon from '@mui/icons-material/Launch';
 import Link from 'next/link'
 import React, { MouseEventHandler, useState } from 'react'
+import projectImage from "../../../public/1.jpg"
+import Image from 'next/image';
 interface Blog {
     image:string,
     topic:string,
@@ -25,7 +27,7 @@ function BlogCard({blog}:AppProps) {
   return (
     <div onMouseLeave={hideLaunch} onMouseEnter={showLaunch}  className=" bg-white  flex flex-col pb-2 rounded-2xl shadow-md ring-1  ring-slate-400 overflow-hidden">
       <div className="relative">
-        <img className="object-cover w-full aspect-3/2" src={blog.image} alt={"blog-image"} />
+        <Image src={projectImage} className="object-cover w-full aspect-3/2"  alt="blog-image" />
         <span className="p-2 text-white bg-orange-600 text-sm font-bold capitalize rounded-lg absolute bottom-3 left-3">
           {blog.topic}
         </span>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import aboutImage from "../../../public/desk.jpg"
 function About() {
   return (
     <div
@@ -8,8 +8,8 @@ function About() {
       className="lg:px-custom flex w-full flex-col items-center justify-center gap-12 px-12  pt-20 lg:flex-row "
     >
       <div className="max-h-96 max-w-md overflow-hidden   rounded-lg lg:aspect-square">
-        <img
-          src="desk.jpg"
+        <Image
+          src={aboutImage}
           className="h-full w-full object-cover"
           alt="about"
         />

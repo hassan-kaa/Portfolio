@@ -2,6 +2,8 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import GithubIcon from '@mui/icons-material/GitHub';
 import Link from "next/link";
 import React from "react";
+import Image from 'next/image';
+import projectImage from "../../../public/Kaaprompts.png"
 type AppProps = {
   position: string;
 };
@@ -15,8 +17,9 @@ function ProjectCard({ position }: AppProps) {
       }  xl:p-8 `}
     >
       <div className=" aspect-3/2 relative w-full overflow-hidden rounded-xl xl:w-1/2  ">
-        <img
-          src="/kaaprompts.png"
+        <Image
+          
+          src={projectImage}
           className=" hover:duration-5000 absolute object-cover transition duration-1000 ease-in-out hover:translate-y-[-40%] hover:scale-110"
           alt="project photo"
         />
