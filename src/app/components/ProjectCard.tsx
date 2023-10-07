@@ -1,5 +1,5 @@
-import { faNewspaper, faSadCry } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import LaunchIcon from '@mui/icons-material/Launch';
+import GithubIcon from '@mui/icons-material/GitHub';
 import Link from "next/link";
 import React from "react";
 type AppProps = {
@@ -43,17 +43,17 @@ function ProjectCard({ position }: AppProps) {
         <div className="flex items-center justify-center gap-2">
           <Link
             href={"https://github.com/hassan-kaa/KaaaPrompts"}
-            className="flex items-center gap-1"
+            className="flex items-center gap-2 p-2 hover:text-blue-600"
           >
             Code
-            <FontAwesomeIcon height={16} width={16} icon={faSadCry} />
+            <GithubIcon/>
           </Link>
           <Link
             href={"https://kaa-prompts.vercel.app/"}
-            className="flex items-center gap-1"
+            className="flex items-center gap-2 p-2 hover:text-blue-600"
           >
             Live demo
-            <FontAwesomeIcon height={16} width={16} icon={faNewspaper} />
+            <LaunchIcon/>
           </Link>
         </div>
       </div>

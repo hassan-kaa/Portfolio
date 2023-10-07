@@ -5,7 +5,7 @@ function About() {
   return (
     <div
       id="about"
-      className="lg:px-custom flex w-full flex-col items-center justify-center gap-12 px-20  pt-20 lg:flex-row "
+      className="lg:px-custom flex w-full flex-col items-center justify-center gap-12 px-12  pt-20 lg:flex-row "
     >
       <div className="max-h-96 max-w-md overflow-hidden   rounded-lg lg:aspect-square">
         <img

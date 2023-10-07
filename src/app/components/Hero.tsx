@@ -1,5 +1,6 @@
-import { faLink, faAd } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,7 +8,7 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="lg:px-custom flex h-[100vh] w-full flex-col items-center justify-center gap-12 px-20  py-4 pt-20 lg:flex-row-reverse lg:items-center  lg:gap-12 "
+      className="lg:px-custom flex h-[100vh] w-full flex-col items-center justify-center gap-12 px-12  py-4 pt-20 lg:flex-row-reverse lg:items-center  lg:gap-12 "
     >
       <div className=" aspect-square max-h-80 max-w-sm animate-custom overflow-hidden border-4 border-solid border-black  lg:max-h-96 lg:max-w-md">
         <img
@@ -32,14 +33,15 @@ function Hero() {
           and passionate web developer based in Tunis, Tunisia. 📍
         </p>
         <div className="flex items-center justify-center gap-4 text-black">
-          <Link href="https://github.com/hassan-kaa" className="cursor-pointer">
-            <FontAwesomeIcon height={32} width={32} icon={faLink} />
+          <Link href="https://github.com/hassan-kaa" className="cursor-pointer hover:text-blue-500">
+            
+            <GitHubIcon/>
           </Link>
           <Link
             href="https://www.linkedin.com/in/hassan-kaabechi-250363229/"
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-blue-500"
           >
-            <FontAwesomeIcon height={32} width={32} icon={faAd} />
+            <LinkedInIcon/>
           </Link>
         </div>
         <div className="flex flex-col items-center justify-center gap-4 lg:items-start  lg:gap-8 ">
