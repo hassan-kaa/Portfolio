@@ -111,7 +111,7 @@ function Hero() {
               />
               <Image
                 className="skill"
-                src={"/nest.png"}
+                src={"/Nest.png"}
                 alt="nest"
                 width={48}
                 height={48}
